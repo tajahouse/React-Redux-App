@@ -5,8 +5,7 @@ import Characters from "./components/Characters";
 function App() {
   return (
     <div className="App">
-      <h1 className="heading_name">Breaking Bad</h1>  
-      <Characters /> 
+       <Characters /> 
     </div>
   );
 }
