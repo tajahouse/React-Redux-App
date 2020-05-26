@@ -16,8 +16,8 @@ export const getCharacters = () =>dispatch => {
   .then( res => {
       dispatch({ type: FETCH_CHARACTERS_SUCCESS, payload: res.data})
   })
-  .catch(err => 
-      console.log(err)
-    //   dispatch({ type: FETCH_CHARACTERS_FAILURE, payload: `${err.response.status} ${err.response.status}`})
-    )
+.catch(err =>{ 
+    console.log(err);
+    dispatch({ type: FETCH_CHARACTERS_FAILURE, payload: `${err.response.status} ${err.response.status}`});
+});
 }
