@@ -4,14 +4,9 @@ import { getCharacters } from "../actions"
 import { useDispatch } from "react-redux";
 import Character from './Character'
 
+
+
 const Characters = props =>{
-
-//So, how would I start it... I forgot lol
-
-// useEffect(()=>{
-//     dispatch(getCharacters());
-// }, [])
-
 
 const dispatch= useDispatch();
     const fetchCharacters = e =>{
@@ -22,11 +17,12 @@ const dispatch= useDispatch();
     return (
         <div>
             
-            <h4 key={props.character.char_id}>{props.character.name}</h4>
+            <Character character={props.character} />
             <button className="fetch_button" onClick={ fetchCharacters }>Characters</button>
-            {props.character.map(char =>{console.log(char)
+            
+            {/* {props.character.map(char =>{console.log(char)
                 return <h4 key={char.char_id}>{char.name}</h4>
-            })}
+            })} */}
         </div>
     )
 }

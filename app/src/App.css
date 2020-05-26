@@ -37,3 +37,25 @@
     transform: rotate(360deg);
   }
 }
+.character_wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+
+}
+.character{
+  background-color: #195bd6;
+  box-shadow: 2px 2px 3px grey;
+  width: 45%;
+  text-align: left;
+  margin: 4px 0;
+  padding-left: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+.char_img{
+  box-shadow: 2px 2px 3px black;
+ 
+}
