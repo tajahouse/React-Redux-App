@@ -7,7 +7,7 @@ const initialState = {
 }
 
 function reducer( state = initialState, action) {
-    console.log('reducer', action);
+    // console.log('reducer', action.payload);
     switch (action.type){
         case FETCH_CHARACTERS:
             return{
@@ -17,6 +17,7 @@ function reducer( state = initialState, action) {
                 //When we are wanting to transition from an error state, we want to clear out that error.
             };
             case FETCH_CHARACTERS_SUCCESS:
+                console.log(action.payload)
                 return{
                     ...state,
                     error:'',
