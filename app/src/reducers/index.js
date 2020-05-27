@@ -14,6 +14,7 @@ function reducer( state = initialState, action) {
                 ...state,
                 isFetching: true,
                 error:'',
+                character:[]
                 //When we are wanting to transition from an error state, we want to clear out that error.
             };
             case FETCH_CHARACTERS_SUCCESS:

@@ -12,15 +12,14 @@ export const getCharacters = () =>{
       type: FETCH_CHARACTERS
       //Here we are telling our app that we are going into a fetching state
   });
+
   axios
   .get("https://breakingbadapi.com/api/characters")
   .then( res => 
-
     {
-      
-      // console.log({res})
+            // console.log({res})
       dispatch({ type: FETCH_CHARACTERS_SUCCESS, payload: res.data})
-  }
+    }
   )
 .catch(err =>{ 
     console.log(err);

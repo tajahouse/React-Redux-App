@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { getCharacters } from "../actions"
 import { useDispatch } from "react-redux";
 import Character from './Character'
-import { styles } from "@material-ui/core"
 
 
 const Characters = props =>{
